@@ -14,7 +14,7 @@ export default function App() {
     <div>
       <HashRouter>
         <Routes>
-          <Route path="/#" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/contact" element={<ContactPage />} />

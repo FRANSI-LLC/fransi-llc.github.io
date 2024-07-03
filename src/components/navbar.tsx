@@ -54,21 +54,21 @@ const NavLinks = () => {
                         </li>
                     </div>
                 </a>
-                <a href="/faqs">
+                <a href="/#/faqs">
                     <div className={classVals}>
                         <li>
                             FAQs
                         </li>
                     </div>
                 </a>
-                <a href="/careers">
+                <a href="/#/careers">
                     <div className={classVals}>
                         <li>
                             Careers
                         </li>
                     </div>
                 </a>
-                <a href="/contact">
+                <a href="/#/contact">
                     <div className={classVals}>
                         <li>Contact</li>
                     </div>
