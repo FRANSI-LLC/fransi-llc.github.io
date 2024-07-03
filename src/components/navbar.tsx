@@ -47,28 +47,28 @@ const NavLinks = () => {
     return(
         <ul className="flex flex-row space-x-10 font-mont flex-wrap basis-60">
             <div className="w-24 justify-center md:flex">
-                <a href="/fransi_llc">
+                <a href="/">
                     <div className={classVals}>
                         <li>
                             Home
                         </li>
                     </div>
                 </a>
-                <a href="/fransi_llc/faqs">
+                <a href="/faqs">
                     <div className={classVals}>
                         <li>
                             FAQs
                         </li>
                     </div>
                 </a>
-                <a href="/fransi_llc/careers">
+                <a href="/careers">
                     <div className={classVals}>
                         <li>
                             Careers
                         </li>
                     </div>
                 </a>
-                <a href="/fransi_llc/contact">
+                <a href="/contact">
                     <div className={classVals}>
                         <li>Contact</li>
                     </div>
