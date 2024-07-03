@@ -4,21 +4,11 @@ import './index.css';
 import App from './App';
 import { HashRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
 
-const router = createHashRouter([
-  {
-    path: "/*",
-    element: <App />,
-  }
-]);
-
-root.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
