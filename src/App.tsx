@@ -12,11 +12,11 @@ export default function App() {
   return (
     <Router>
         <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/careers" element={<Careers />} />
-                <Route path="/faqs" element={<FAQs />} />
-                <Route path="/contact" element={<ContactPage />} />
-            </Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/faqs" element={<FAQs />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
     </Router>
   );
 }
