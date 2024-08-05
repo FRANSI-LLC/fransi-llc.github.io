@@ -60,6 +60,7 @@ export default function Contact() {
         <div>
             <div className="w-full" ref={main}>
                 <h1 className="title text-5xl py-5">Contact</h1>
+                <p className="title text-xl py-5">Feel free to reach us through <br></br>Email: admin@frasillc.org <br></br> Phone: +1 (951)-415-8953</p>
             </div>
             <div>
                 <div className='md:hidden flex flex-col items-center justify-center'>
