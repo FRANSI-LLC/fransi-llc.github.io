@@ -1,7 +1,7 @@
 {
   "name": "fransi-llc",
   "version": "0.1.0",
-  "homepage": "https://fransi-llc.github.io",
+  "homepage": "https://www.fransillc.org/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
