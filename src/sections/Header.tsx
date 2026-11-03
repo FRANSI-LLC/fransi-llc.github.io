@@ -4,6 +4,11 @@ export function Header() {
   return (
     <header className="container header">
       <a href="#top" className="brand">
+        <img
+          src={`${process.env.PUBLIC_URL}/logo.png`}
+          alt=""
+          className="brand__logo"
+        />
         {site.name}
       </a>
       <nav aria-label="Main" className="nav">

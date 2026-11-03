@@ -1,4 +1,4 @@
-import { about, team } from '../content';
+import { about } from '../content';
 
 export function About() {
   return (
@@ -24,7 +24,7 @@ export function About() {
         ))}
       </div>
 
-      <h3 className="team__heading">The team</h3>
+      {/* <h3 className="team__heading">The team</h3>
       <div className="grid team">
         {team.map((m) => (
           <div key={m.name} className="card member">
@@ -38,7 +38,7 @@ export function About() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

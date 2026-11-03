@@ -189,6 +189,13 @@ p {
   font-size: 1.375rem;
   color: var(--ink);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand__logo {
+  width: 40px;
+  height: auto;
 }
 .brand:hover {
   color: var(--ink);
@@ -537,6 +544,17 @@ p {
 .form__note {
   font-size: 0.9375rem;
   color: var(--ink-muted);
+}
+
+.form--soon {
+  justify-content: center;
+  gap: 12px;
+}
+
+.form__soon-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 /* ---------- Footer ---------- */

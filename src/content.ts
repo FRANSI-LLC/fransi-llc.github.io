@@ -2,9 +2,9 @@
 // rarely means touching a component. Entries marked TODO still need real values.
 
 export const site = {
-  name: 'Fransi',
-  email: 'hello@fransi.dev', // TODO: real contact email
-  city: 'Your City', // TODO: city or region you serve
+  name: 'Fransi LLC',
+  email: 'nataniel.jayaseelan@gmail.com',
+  city: 'Bay Area, California', // TODO: city or region you serve
   responseTime: 'one business day', // TODO: how quickly you reply
 };
 
@@ -32,12 +32,12 @@ export const about = {
   title: "We're students. That's the advantage.",
   paragraphs: [
     "We're a small team of engineering students who started building software for people around us, and kept going. We don't have years of habits to protect, so we question the default way of doing things and pick what actually works for you.",
-    "We learn the newest tools because we use them every day. And when you work with us, you talk directly to the people writing your code. No account managers, no hand-offs.",
+    "We learn the newest tools because we use them every day. And when you work with us, you talk directly to the people writing your code.",
   ],
   strengths: [
     { title: 'Fresh eyes', body: 'We ask "why is it done this way?" before copying what everyone else does.' },
     { title: 'Real engineering', body: 'Computer engineering training and backend industry experience, not just templates.' },
-    { title: 'Shipped work', body: "We've built a mobile app for a college department, with user accounts and a live database." },
+    // { title: 'Shipped work', body: "We've built a mobile app for a college department, with user accounts and a live database." },
     { title: 'Fair pricing', body: 'Lean overhead means clear, honest quotes for start-ups and small teams.' },
   ],
 };
@@ -50,23 +50,23 @@ export type TeamMember = {
   tone: 'green' | 'amber';
 };
 
-export const team: TeamMember[] = [
-  {
-    name: 'Nataniel Jayaseelan',
-    initials: 'NJ',
-    role: 'Co-founder · Backend & apps',
-    // TODO: add one line about what you love building
-    bio: 'Computer Engineering student with backend software engineering experience.',
-    tone: 'green',
-  },
-  {
-    name: 'Partner Name', // TODO
-    initials: 'PN', // TODO
-    role: 'Co-founder · Role', // TODO
-    bio: 'Background and focus. One line about what they love building.', // TODO
-    tone: 'amber',
-  },
-];
+// export const team: TeamMember[] = [
+//   {
+//     name: 'Nataniel Jayaseelan',
+//     initials: 'NJ',
+//     role: 'Co-founder · Backend & apps',
+//     // TODO: add one line about what you love building
+//     bio: 'Computer Engineering student with backend software engineering experience.',
+//     tone: 'green',
+//   },
+//   {
+//     name: 'Partner Name', // TODO
+//     initials: 'PN', // TODO
+//     role: 'Co-founder · Role', // TODO
+//     bio: 'Background and focus. One line about what they love building.', // TODO
+//     tone: 'amber',
+//   },
+// ];
 
 export type ServiceIcon = 'web' | 'mobile' | 'workflow' | 'code';
 

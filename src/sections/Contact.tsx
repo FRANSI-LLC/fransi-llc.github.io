@@ -1,26 +1,31 @@
-import { FormEvent, useState } from 'react';
-import { projectTypes, site } from '../content';
+// import { FormEvent, useState } from 'react';
+// import { projectTypes, site } from '../content';
+import { site } from '../content';
 
+// Contact form is disabled for now and replaced with a "coming soon" card.
+// To restore it, uncomment the imports above, the handler below and the
+// <form> block in the JSX, then remove the coming-soon card.
+//
 // GitHub Pages has no server, so the form opens the visitor's email app
 // with the message pre-filled instead of posting anywhere.
 export function Contact() {
-  const [sent, setSent] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const name = String(data.get('name') ?? '');
-    const email = String(data.get('email') ?? '');
-    const type = String(data.get('type') ?? '');
-    const message = String(data.get('message') ?? '');
-
-    const subject = `${type} project enquiry from ${name}`;
-    const body = `${message}\n\n— ${name}\n${email}`;
-    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-    setSent(true);
-  }
+  // const [sent, setSent] = useState(false);
+  //
+  // function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  //   e.preventDefault();
+  //   const data = new FormData(e.currentTarget);
+  //   const name = String(data.get('name') ?? '');
+  //   const email = String(data.get('email') ?? '');
+  //   const type = String(data.get('type') ?? '');
+  //   const message = String(data.get('message') ?? '');
+  //
+  //   const subject = `${type} project enquiry from ${name}`;
+  //   const body = `${message}\n\n— ${name}\n${email}`;
+  //   window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
+  //     subject
+  //   )}&body=${encodeURIComponent(body)}`;
+  //   setSent(true);
+  // }
 
   return (
     <section id="talk" className="contact">
@@ -29,10 +34,19 @@ export function Contact() {
           <h2 className="contact__title">Let's talk.</h2>
           <p className="contact__lead">We reply within {site.responseTime}.</p>
           <p className="contact__email">
-            Or email <a href={`mailto:${site.email}`}>{site.email}</a>
+            Email <a href={`mailto:${site.email}`}>{site.email}</a>
           </p>
         </div>
 
+        <div className="form form--soon">
+          <p className="form__soon-title">Contact form coming soon</p>
+          <p className="form__note">
+            In the meantime, email us at{' '}
+            <a href={`mailto:${site.email}`}>{site.email}</a>.
+          </p>
+        </div>
+
+        {/*
         <form className="form" onSubmit={handleSubmit}>
           <div className="field">
             <label htmlFor="f-name">Your name</label>
@@ -64,6 +78,7 @@ export function Contact() {
             </p>
           )}
         </form>
+        */}
       </div>
     </section>
   );
